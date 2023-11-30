@@ -1,0 +1,17 @@
+.text-dec{
+    color: var(--Dark-04, #9F9F9F);
+    font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+}
+.text-dec:hover{
+    color: var(--Dark-02, #403F3F);
+height: 64px;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid var(--Dark-06, #E7E7E7);
+background: var(--Dark-06, #E7E7E7);
+
+
+}
