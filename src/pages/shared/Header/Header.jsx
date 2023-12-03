@@ -3,6 +3,7 @@ import logo from '../../../assets/logo.png'
 import moment from 'moment';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -18,12 +19,14 @@ const Header = () => {
         Jude Bellingham scored his 14th goal of the season as Real Madrid returned to the top of La Liga with a 3-0 victory at lowly Cadiz. ‘Messi’s heir’ set to face off against eternal rival in Barcelona vs Porto clash . 
 </Marquee>
         </div>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
+          <Nav className="mx-auto fw-semibold">
+            <Nav.Link href="#features">
+              <Link className='text-body-tertiary text-decoration-none' to='/'>Home</Link>
+            </Nav.Link>
             <Nav.Link href="#features">About</Nav.Link>
             <Nav.Link href="#pricing">Career</Nav.Link>
           </Nav>
